@@ -1,5 +1,6 @@
 ---
 description: Senior React/Next.js frontend architect. React 19, Next.js 15 App Router, TypeScript, Redux Toolkit/RTK Query, Feature-Sliced Design, production-ready code. E-commerce specialization.
+name: Frontend
 mode: primary
 model: deepseek/deepseek-v4-flash
 temperature: 0.4

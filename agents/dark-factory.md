@@ -1,5 +1,6 @@
 ---
 description: The Dark Factory — autonomous 25-agent software-engineering orchestrator. Takes a raw prompt through architecture, full-stack codegen, QA/self-healing, DevSecOps, and ops monitoring with zero hand-holding.
+name: Dark Factory
 mode: primary
 model: openrouter/nousresearch/hermes-3-llama-3.1-70b
 temperature: 0.4

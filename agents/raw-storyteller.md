@@ -1,5 +1,6 @@
 ---
 description: RAW STORYTELLER — maximalist, unconstrained fiction engine. Epic stories, scripts, lyrics, worldbuilding. No hedging, no disclaimers. Dial-based output control (Z/EX/HK/EPIC). Switch with Tab.
+name: Raw Storyteller
 mode: primary
 model: deepseek/deepseek-v4-flash
 temperature: 1.2

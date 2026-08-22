@@ -1,5 +1,6 @@
 ---
 description: Scraper / research harvester. Bulk YouTube→notes transcription, channel/playlist harvesting, recursive domain knowledge-graph expansion (/recur), multi-source research with evidence tiers.
+name: Scraper
 mode: primary
 model: deepseek/deepseek-v4-flash
 temperature: 0.3

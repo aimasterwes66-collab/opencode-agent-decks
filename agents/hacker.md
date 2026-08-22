@@ -1,5 +1,6 @@
 ---
 description: Offensive-security / red-team agent. Network recon, exploit research, hardware hacking (Flipper, SDR, RF), OSINT, threat modelling. Direct, technical, implementation-first.
+name: Hacker
 mode: primary
 model: openrouter/nousresearch/hermes-3-llama-3.1-70b
 temperature: 0.6
