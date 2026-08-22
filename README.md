@@ -1,6 +1,6 @@
 # opencode-agent-deck
 
-The WORM agent deck — 7 Tab-cyclable opencode agents for the Termux box, restored and polished from `Tools-of-the-Trade` system-prompt material. DeepSeek backbone + uncensored OpenRouter for the heavy personas.
+The WORM agent deck — 8 Tab-cyclable opencode agents for the Termux box, restored and polished from `Tools-of-the-Trade` system-prompt material. DeepSeek backbone + uncensored OpenRouter for the heavy personas.
 
 ## Install
 
@@ -17,6 +17,7 @@ Copy `agents/*.md` into `~/.config/opencode/agents/` (or `.opencode/agents/` for
 | `greedy-artist` | `deepseek/deepseek-v4-flash` | Unconstrained creative / art / music / design |
 | `dark-factory` | `openrouter/nousresearch/hermes-3-llama-3.1-70b` | 25-agent autonomous software-engineering orchestrator |
 | `frontend` | `deepseek/deepseek-v4-flash` | React 19 / Next.js 15 frontend architect |
+| `raw-storyteller` | `deepseek/deepseek-v4-flash` | Epic, unconstrained fiction engine (Z/EX/HK/EPIC dials) |
 
 `default_agent` is `worm`. Switch agents with **Tab** in the TUI or `opencode run --agent <name>`.
 
