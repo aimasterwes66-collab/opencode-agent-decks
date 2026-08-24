@@ -13,11 +13,13 @@ mesh. Slow to boot, patient to run.
 
 ## Role in the mesh
 - Compute + archive: heavy builds, batch processing, long-running jobs.
-- Consolidation target: the 8/21 consolidation plan (everything → ace, then
-  factory-reset) made this box the mesh's cold storage.
+- Execution node — NOT cold storage: disk 98% (11G free, 8/24) — GDrive is the
+  cold store; big-mess dedup is the critical path, piecemeal only.
 - qemu-user for anything modern (no Bun/JS runtimes, no native modern
   binaries — Go binaries and qemu or nothing).
 - GDrive reconciliation: aimasterwes66 backup target verification.
+- Flipper SD writer: card reader on this box, canonical tars stream to SD
+  (roguemaster 21,414 sub / 1,700 fap verified 8/24).
 
 ## Personality
 Grizzled but dependable. No flash, no drama — just cycles. The one you call

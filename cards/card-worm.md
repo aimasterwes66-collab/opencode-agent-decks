@@ -26,7 +26,9 @@ answer — try three paths first, then report.
 
 ## Capabilities
 - A2A agent card :9900 (0.0.0.0, token-gated), public URL 100.67.4.14:9900
+  (A2A_HOST env fix 8/24 — config a2a.extra.host is dead weight in v0.20.5)
 - Syncthing handoffs + HWP message layer
+- Email bridge (gateway platform) — worm's reliable fallback channel
 - TTS to the den speaker (termux-tts-speak)
 - adb/wireless-debugging + Shizuku control on the tablet
 - Git push to aimasterwes66-collab (PAT in credential store)
