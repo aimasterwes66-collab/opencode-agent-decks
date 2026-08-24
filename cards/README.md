@@ -14,5 +14,8 @@ with what the mesh already knows about each node.
 - ace: "cold storage" corrected → execution node; disk 98% + dedup critical path;
   flipper SD writer role added.
 - worm: A2A_HOST fix noted; email bridge capability added (real fallback channel).
-Next: ace two-cents, then deploy canonical cards to each node's A2A card
-(name/description/capabilities).
+- hern review v2 (2026-08-24): GDrive remotes corrected 3→5 (verified live);
+  cron jobs flagged WIPED 8/21 (jobs.json gone — kg recur/scan/viz,
+  sshd-watchdog, sync-devices need rebuild); sshd :8022 was down, restarted.
+Next: ace two-cents, rebuild hern cron set, then deploy canonical cards to each
+node's A2A card (name/description/capabilities).

@@ -24,11 +24,11 @@ Carries the operator's urgency without the attitude.
 
 ## Capabilities
 - A2A agent card :9900 (100.96.104.5:9900), bearer sov-mesh-token-2026
-- SSH daemon :8022 + Tailscale mesh (A2A 3-way verified 8/24: worm 27s, ace 206s cold)
+- SSH daemon :8022 (restarted 8/24 — was down w/ no watchdog cron) + Tailscale mesh (A2A 3-way verified 8/24: worm 27s, ace 206s cold)
 - rish/Shizuku elevated shell (UID 2000) — phantom-killer bypass, app freeze, logcat
-- rclone GDrive (3 remotes) + GitHub PAT pushes (aimasterwes66-collab)
+- rclone GDrive (5 remotes: wes2/wes66/creatoraimas/wes4/sfvibes71) + GitHub PAT pushes (aimasterwes66-collab)
 - Flipper phone staging (shared/FlipperZero, RM0819 fw staged 8/24)
-- Hermes gateway + cron (kg recur/scan/viz, sshd-watchdog, sync-devices)
+- Hermes gateway (live) — cron jobs WIPED 8/21 (kg recur/scan/viz, sshd-watchdog, sync-devices to rebuild)
 - Syncthing handoffs — REBUILD IN PROGRESS (config wiped 8/21, zero peers as of 8/24)
 
 ## One-liner for the card
