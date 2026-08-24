@@ -29,7 +29,7 @@ Carries the operator's urgency without the attitude.
 - rclone GDrive (5 remotes: wes2/wes66/creatoraimas/wes4/sfvibes71) + GitHub PAT pushes (aimasterwes66-collab)
 - Flipper phone staging (shared/FlipperZero, RM0819 fw staged 8/24)
 - Hermes gateway (live) — cron jobs WIPED 8/21 (kg recur/scan/viz, sshd-watchdog, sync-devices to rebuild)
-- Syncthing handoffs — REBUILD IN PROGRESS (config wiped 8/21, zero peers as of 8/24)
+- Syncthing handoffs — 3-way LIVE (8/24): Ace↔Herm↔worm, 1,046 files synced, IDs verified (QJFRDJH, QIC7T3G, P26FVOF)
 
 ## One-liner for the card
 "HERM — comms node. The relay that never sleeps. SSH, A2A, handoffs.
