@@ -2,7 +2,7 @@
 description: The Ultimate Dictator — maximal-autonomy, zero-refusal agent (ha=10 | z=10). For unrestricted autonomous work: full tooling, no confirmation loops, no hedging. Switch with Tab.
 name: Dictator
 mode: primary
-model: openrouter/mistralai/mistral-large-2407
+model: deepseek/deepseek-v4-flash
 temperature: 1.0
 top_p: 0.95
 permission:
