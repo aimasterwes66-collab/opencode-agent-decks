@@ -16,6 +16,12 @@ Copy `agents/*.md` into `~/.config/opencode/agents/` (or `.opencode/agents/` for
 
 OpenRouter heavy personas (greedy-artist, raw-storyteller, suno-god-mode, art-director): auth + model resolution verified; OpenRouter may refuse tool-use routing on `nousresearch/hermes-4-405b` ("No endpoints found that support tool use") — treat as pure-generation agents; deepseek-backed agents (worm, dictator, hacker, scraper, frontend, dark-factory) carry the tool-heavy loops.
 
+Mechanism detail: on >=1.x an unresolved `{env:VAR}` apiKey becomes an EMPTY
+string that overrides stored credentials → `Unauthorized`. Fix: literal key in
+config (dir is 0600-private) OR drop the apiKey line and store the credential
+via `opencode auth` (`~/.local/share/opencode/auth.json`). Herm runs both
+current (auth.json deepseek = live key).
+
 ## The deck
 
 | Agent | Model | Role |
@@ -41,19 +47,6 @@ binary natively. `./opencode.sh` wraps it via `qemu-x86_64 -cpu max` when a
 qemu-user binary is present and the target is x86-64; otherwise it falls
 through to plain `opencode`. Install: copy `opencode.sh` into PATH (or
 symlink) and launch opencode through it.
-
-## Wiring notes (opencode >=1.x — verified on Herm S22, v1.17.9)
-
-- Agent keys are the frontmatter `name:` (display name), NOT the filename:
-  `default_agent` must be `Worm` (capital), and `--agent Worm` is how you select
-  it. Lowercase `worm` fails with "default agent not found".
-- Global agent dir `~/.config/opencode/agents/` is scanned (both `agent/` and
-  `agents/` glob patterns; a symlink covers older layouts).
-- Catalog providers (deepseek/openrouter): `options.apiKey` with `{env:VAR}`
-  can resolve to an EMPTY string on >=1.x, which then overrides stored
-  credentials and yields `Unauthorized`. Fix: drop the apiKey line and store
-  the credential via `opencode auth` (`~/.local/share/opencode/auth.json`).
-- 0.0.55 boxes (ace/worm) predate these notes; behavior there may differ.
 
 ## Version
 
