@@ -6,6 +6,16 @@ The WORM agent deck — 11 Tab-cyclable opencode agents for the Termux box, rest
 
 Copy `agents/*.md` into `~/.config/opencode/agents/` (or `.opencode/agents/` for project-scoped) and merge `opencode.jsonc` into your config. Then **quit and restart opencode** — config is loaded once at startup, not hot-reloaded.
 
+### Version compatibility (verified 2026-09-07, all 3 boxes wired)
+
+| | 0.0.55-era (worm, ace) | 1.17.9 (herm Termux package) |
+|---|---|---|
+| Agent dir | `~/.config/opencode/agents/` | `agent/` (singular) — symlink `agent → agents` or copy |
+| Agent id | filename (`worm`) | frontmatter `name` (`Worm`) — `default_agent`/`--agent` must match it |
+| `{env:VAR}` apiKey | interpolated | **NOT interpolated** — use literal keys (config dir is private) or `opencode auth login` (auth.json) |
+
+OpenRouter heavy personas (greedy-artist, raw-storyteller, suno-god-mode, art-director): auth + model resolution verified; OpenRouter may refuse tool-use routing on `nousresearch/hermes-4-405b` ("No endpoints found that support tool use") — treat as pure-generation agents; deepseek-backed agents (worm, dictator, hacker, scraper, frontend, dark-factory) carry the tool-heavy loops.
+
 ## The deck
 
 | Agent | Model | Role |
