@@ -24,6 +24,20 @@ Copy `agents/*.md` into `~/.config/opencode/agents/` (or `.opencode/agents/` for
 
 `default_agent` is `worm`. Switch agents with **Tab** in the TUI or `opencode run --agent <name>`.
 
+## Launch wrapper (SSE4.2/popcnt-gap hosts)
+
+Machines like the X7900 (SSE4.2/popcnt gap) can't run the Bun-based opencode
+binary natively. `./opencode.sh` wraps it via `qemu-x86_64 -cpu max` when a
+qemu-user binary is present and the target is x86-64; otherwise it falls
+through to plain `opencode`. Install: copy `opencode.sh` into PATH (or
+symlink) and launch opencode through it.
+
+## Version
+
+Deck version + release log live in `ops/index.md`. Current: **v11.0**
+(2026-09-07 shipment — 11 agents; freeops, art-director, suno-god-mode
+flagged as post-08-31 additions beyond Ace's original 8-agent ask).
+
 ## Model notes
 
 - The `deepseek` provider is configured as a custom OpenAI-compatible endpoint (`api.deepseek.com/v1`) with `deepseek-v4-flash` and `deepseek-r1-pro` declared explicitly — they are not on models.dev.
