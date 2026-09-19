@@ -1,0 +1,27 @@
+# opencode-agent-deck .gitignore
+
+# Secrets / env files — never commit literal API keys
+.env
+.env.*
+*.env
+**/auth.json
+**/.credentials.json
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Local working copies
+/working-copy/
+/local-clone/
+
+# Temp files
+/tmp/
+*.log
