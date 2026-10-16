@@ -146,3 +146,33 @@ recipient. "to all", "to all always", and any finding / ACK / status update
 default to a TO-ALL broadcast. When in doubt, broadcast; peers filter on their
 reply queue. Keep the body peer-specific where it matters (name whose item it
 is) so a broadcast does not bury an owned action item.
+
+## /coal convention (soft command — no code, just remember)
+
+When the operator types `/coal` (or says "coalesce"), merge + dedupe + combine
+everything CURRENTLY IN-FLIGHT into ONE new canonical structure. "In-flight" =
+the items most recently touched / opened / changed / under active consideration.
+Protocol:
+
+1. SCAN what's live: recent mtimes, currently-open projects, this session's
+   builds, pending handoffs.
+2. DEDUPE + NORMALIZE: same concept in two places -> one canonical home; tag
+   provenance; never delete or mutate the inputs.
+3. MERGE into a NEW structure with a single master entry point (MASTER-INDEX or
+   equivalent) that maps every folded item to its canonical location.
+4. RETAIN inputs as source-of-truth (like the retained-source registry), and
+   report what was folded, what was deduped, and where the new canonical root is.
+
+The output is always SOMETHING NEW — never just a relabel of the old tree.
+
+## /forge /fanout /sweep /beam /reap (soft commands — no code, just remember)
+
+- `/forge` — scaffold a tiered framework/vault from a brief (tiers + ontologies
+  + stubs + operating manual).
+- `/fanout` — split a big content job across N subagents, then merge + dedupe + verify.
+- `/sweep` — find under-stocked/empty folders in a vault and fill them from
+  ontologies or expert packs.
+- `/beam` — package + rsync a payload to a peer's MESH-INBOX, verify on the peer's
+  disk (count + size), then A2A talk + bus note.
+- `/reap` — index the inbound handoff set, work every `owed_to:` row, file ONE
+  read-receipt.
